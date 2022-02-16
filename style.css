@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+
+:root {
+  --clr-dark: 27, 27, 29;
+  --clr-light: 109, 151, 173;
+  --clr-accent: 255, 153, 0;
+  --clr-white: 255, 255, 255;
+
+  --fs-sm: 1rem;
+  --fs-md: 2rem;
+  --fs-lg: 6rem;
+
+  --ff-global: "poppins", sans-serif;
+
+  --gap-sm: 0.5rem;
+  --gap-md: 1rem;
+  --gap-lg: 3rem;
+}
+
+/* ------------------- */
+/* Utility classes     */
+/* ------------------- */
+
+/* general */
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+.center-wrapper {
+  padding-inline: 2em;
+  margin-inline: auto;
+  max-width: 50rem;
+}
+
+.center-wrapper-wide {
+  padding-inline: 2em;
+  margin-inline: auto;
+  max-width: 90rem;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+/* grid classes */
+
+.grid-auto-flow {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.three-column-grid__expand-two {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  padding: 1em 2em;
+}
+
+.place-content-center {
+  display: grid;
+  place-content: center;
+}
+
+.responsive-card-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  padding-inline: 2em;
+}
+
+/* colors */
+
+.bg-dark {
+  background-color: rgba(var(--clr-dark));
+}
+.bg-light {
+  background-color: rgba(var(--clr-light));
+}
+.bg-accent {
+  background-color: rgba(var(--clr-accent));
+}
+.bg-white {
+  background-color: rgba(var(--clr-white));
+}
+
+.text-dark {
+  color: rgba(var(--clr-dark));
+}
+.text-light {
+  color: rgba(var(--clr-light));
+}
+.text-accent {
+  color: rgba(var(--clr-accent));
+}
+.text-white {
+  color: rgba(var(--clr-white));
+}
+
+/* typography */
+
+.ff-global {
+  font-family: var(--ff-global);
+}
+
+.fs-sm {
+  font-size: var(--fs-sm);
+}
+.fs-md {
+  font-size: var(--fs-md);
+}
+.fs-lg {
+  font-size: var(--fs-lg);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* ------------------- */
+/* main styling        */
+/* ------------------- */
+
+/* general styling */
+
+section {
+  height: 80vh;
+}
+
+h1 {
+  line-height: 1.3;
+}
+
+h2 {
+  margin-bottom: 3rem;
+}
+
+p {
+  margin: 1.5rem 0;
+}
+
+a {
+  color: rgba(var(--clr-dark));
+}
+
+/* header styling */
+
+header button {
+  border: none;
+  background-color: rgba(var(--clr-white));
+  color: rgba(var(--clr-dark));
+  border-radius: 15px;
+  margin-left: 2rem;
+  padding: 0.25rem 0.75rem;
+  font-family: var(--ff-global);
+}
+
+nav li {
+  list-style: none;
+}
+
+span {
+  color: rgba(var(--clr-light));
+  font-weight: 600;
+}
+
+/* portfolio section */
+
+.card {
+  background-color: rgba(var(--clr-white));
+  color: rgba(var(--clr-dark));
+  border-radius: 15px;
+  padding: 1rem 4rem;
+}
+
+.card p {
+  margin-bottom: 4rem;
+}
+
+.card button {
+  border: none;
+  background-color: rgba(var(--clr-dark));
+  color: rgba(var(--clr-white));
+  border-radius: 15px;
+  padding: 0.25rem 0.75rem;
+  font-family: var(--ff-global);
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.card a {
+  display: block;
+  text-align: center;
+}
+.card--important {
+  color: rgba(var(--clr-light));
+}
+
+.card--best {
+  color: rgba(var(--clr-accent));
+}
+
+/* footer styling */
+
+footer {
+  padding: 2rem 1rem;
+}
