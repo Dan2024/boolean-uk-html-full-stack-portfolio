@@ -73,6 +73,11 @@
   padding: 1em 2em;
 }
 
+.place-items-center {
+  display: grid;
+  place-items: center;
+}
+
 .place-content-center {
   display: grid;
   place-content: center;
@@ -186,6 +191,7 @@ span {
 .about li {
   margin: 0.75rem 0;
 }
+
 /* portfolio section */
 
 .card {
